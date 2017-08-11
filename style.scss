@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter|Orbitron|Righteous|Exo|Mogra|Tangerine|Acme|OpenSans);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+$pColor: white;
+$blue: #8080ff;
+$red: #ff3333;
+$pFont: Acme, serif;
+
+* {box-sizing: border-box;}
+a {text-decoration: none; color: white;}
+i {color: white;}
+button {position: absolute; bottom: 1vw; cursor: pointer; font-size: 2vw; padding: 1vw;font-family: Orbitron, serif;font-weight: 900;border-radius: .5vw;}
+ul {margin-left: 0; padding-left: 0; width: 100%;}
+li {list-style-type: none; list-style-position: inside; margin-bottom: 1vw; padding: 1vw; background-color: #E7E7E8; font-family: $pFont; font-size: 2vw; border-radius: 5px}
+li.header {background-color: navy; text-align: center;}
+li.addList {cursor: pointer; background-color: #6CF}
+li.addList:hover {border-left: .5vw solid #D96F32;margin-left: -.5vw; border-right: .5vw solid #D96F32;margin-right: -.5vw;}
+li.list {cursor: pointer;}
+li.list:hover {border-left: .5vw solid #D96F32;margin-left: -.5vw; border-right: .5vw solid #D96F32;margin-right: -.5vw;}
+.selected {border-left: .5vw solid navy;margin-left: -.5vw; border-right: .5vw solid navy;margin-right: -.5vw;}
+body {margin: 0 auto; position: relative; background-color: #515A5A;}
+.splash {width: 100%; height: 100%; background: url(https://www.redtailbooks.com/codeCamp/images/cook.jpg) no - repeat center center;}
+.banner {background: #6CF;color: black;height: 5vw;padding: 1vw;}
+.top h1 {margin: 0;position: relative;font-family: Orbitron, serif;font-size: 3vw;font-weight: 900;display: inline-block;}
+#index {position: absolute; top: 5vw; height: 85vh; width: 33%; background: white; padding: 1vw; overflow-y:auto;}
+#recipe {position: absolute; top: 5vw; right: 0; height: 85vh; width: 65.9%; background: white; padding: 1vw;}
+#btnEdit {left: 1vw; background-color: $blue; color: white}
+#btnSave {left: 1vw; background-color: Lime; color: white}
+#btnDelete {right: 1vw; background-color: $red}
+#btnCancel {right: 1vw; background-color: $red}
+#titleBox {width: 80%; background-color: navy; resize: none; text-align: center; font-family: $pFont; font-size: 3vw; color: white; overflow: hidden; border-width: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; outline: 0;}
+#editTitle {width: 100%; height:3.5vw;background-color: #E7E7E8;resize: none;font-family: $pFont; font-size: 2vw;}
+#editRecipe {width: 100%; height: calc(100% - 9vw);resize: none;font-family: $pFont; font-size: 1.5vw; overflow-y:auto;}
+.footer {position: fixed; bottom: 5px; width: 100%; height: auto; margin-top: 40px; text-align: center; font-family: $pFont;  font-size: calc(40% + .5vw);}
